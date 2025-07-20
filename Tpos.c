@@ -1,0 +1,87 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<math.h>
+//int classement(int tab[],int TailleTableau);
+int main()
+{
+  int tableau[10]={0},i=0,tpos[10]={0},tneg[10]={0},j=0,k=0,p=0,n=0,tri=0,z=0;
+  printf("Entrez les valeurs du tableau \n");
+  for(i=0;i<=9;i++)
+  {
+   printf("Case %d :",i);
+   scanf("%d",&tableau[i]);
+  }
+  for(i=0;i<=9;i++)
+    {
+       if(tableau[i]>0)
+          {
+             tpos[i]=tableau[i];
+          }
+   }
+   for(j=0;j<=9;j++)
+        {
+          if(tableau[j]>0)
+            {
+              p++;
+            }
+        }
+  for(i=0;i<=9;i++)
+   {
+       if(tableau[i]<0)
+            {
+              tneg[i]=tableau[i];
+            }
+   }
+    for(j=0;j<=9;j++)
+     {
+       if(tableau[j]<0)
+            {
+              n++;
+            }
+     }
+     for(i=0;i<=9;i++)
+   {
+     for(j=0;j<=9;j++)
+      {
+        if(tpos[i]>tpos[j])
+         {
+           tri=tpos[i];
+           tpos[i]=tpos[j];
+           tpos[j]=tri;
+         }
+      }
+   }
+   for(i=0;i<=9;i++)
+   {
+     for(j=0;j<=9;j++)
+      {
+        if(tneg[i]>tneg[j])
+         {
+           tri=tneg[i];
+           tneg[i]=tneg[j];
+           tneg[j]=tri;
+         }
+      }
+   }
+   i=0;
+    do
+     {
+        if(tpos[i]>0)
+          { 
+            printf("P=%d\n",tpos[i]);
+            z++;
+          }
+        i++;
+     }while(z!=p);
+     i=0;
+     z=0;
+     do
+     {
+        if(tneg[i]<0)
+          { 
+            printf("N=%d\n",tneg[i]);
+            z++;
+          }
+        i++;
+     }while(z!=n);
+}
