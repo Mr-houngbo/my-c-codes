@@ -1,0 +1,21 @@
+														DIFFICULTÉES RENCONTRÉES LORS DE LA RÉALISATION DE CE PROJET
+
+	Comme de coutume, nous avons eu à rencontrer un certains nombre d'erreurs syntaxiques , erreurs de segmentations , notament lors de 	
+		l'utilisation des pointeurs de structure.
+	
+	Nous avons eu de difficultés à fédérer le groupe autour du projet, à distribuer les taches et surtout à assurer de leurs réalisations de
+	 maniere optimale.
+	
+	Mais à force de persévérence nous avons réussi à nous regrouper derriere notre tache commune et avons rendu une bonne production.
+	
+	Au niveau de l'utilisation des listes doublements chainées , nous avons eu une grande difficulté a comprendre les coins ,recoins et 
+		contours de la mémoire ,de son utilisation , de la fixation des erreurs de segmentation , errreus de depassement et/ou acces à une 
+		mémoire non-déclarée.Surtout pour les fonctions unnion et add .
+	
+	Mais cela aussi nous l'avons réglé . Mais ce serait idiot de ne pas reconnaitre que cela nous a fait perdre un temps tres précieux 
+		puisque nous voulions corriger toutes les  erreus ,rendre un programme sans erreurs , sans bugs et surtout qui fais ce pourquoi il est 
+		écrit.
+		
+	Au delà de toutes ces difficultés , nous avons beaucoup appris de la réalisation de ce projet. 
+	Nous espérons en apprendre davantage de la réalisation des prochains projet.
+

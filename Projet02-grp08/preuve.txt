@@ -1,0 +1,52 @@
+int get(MonEnsemble *A, int pos)
+__________________________________________________________________________________________________
+INIT																HALT
+i <- pos-1															i=n-1
+n=tab[pos-1]
+tab[i]=tab[pos]
+__________________________________________________________________________________________________
+ITER															CLOT
+i <- i+1															tab[n]=tab[n]
+tab[i]=tab[i+1]														n=n-1
+__________________________________________________________________________________________________	
+									INV
+									0<=i<n
+___________________________________________________________________________________________________
+@pre  tab[n], pos
+@post  tab[n]<-tab[n-1]
+@Result   return tab[pos-1]
+
+
+									PREUVE
+* Correction partielle
+1-) {pre} INIT {INV}
+Supposons que {pre} est réalisé
+tab[n], pos
+INIT => i=pos-1, n=tab[pos-1]
+On a 0<= pos-1 <n
+tab[pos-1]=tab[pos]
+
+2-)  {INV && non Halt} ITER {INV}
+Supposons que {INV && non Halt} est réalisé
+INV: 0<=i<n
+non HALT : i != n-1
+ITER
+
+Soit i1 et tab[i1]=tab[i1+1] les données avant l'itération. Donc 0<i1<n-1
+
+Après itération on a
+i<- i1+1
+tab[i]=tab[i+1]=tab[i1+1+1]=tab[i1+2]
+0< i <n;
+D'où l' INV est vrai
+
+3-) {INV && HALT} CLOT {post}
+
+0<= 1< n && i=n-1
+tab[i]=tab[n-1]
+D"où le programme compile parfaitement
+
+
+
+
+Les autres fonctions se base exactement sur la même preuve !!!!!!!

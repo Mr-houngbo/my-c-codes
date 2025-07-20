@@ -1,0 +1,5 @@
+										UTILISATION DU PROGRAMME
+
+Pour utiliser ce programme, un fichier main a été créé et permet de tester toute les fonctions dans un ordre donné. Il suffit juste de 
+suivre les instructios à la lettre et tout se passera comme prévu.Aussi , il faut respecter la spécification de chaque fonction avant son 
+utilisation.
